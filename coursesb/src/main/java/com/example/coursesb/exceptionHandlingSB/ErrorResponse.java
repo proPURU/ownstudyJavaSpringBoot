@@ -1,4 +1,4 @@
-package com.example.coursesb.exceptionHandlingSB.customexception;
+package com.example.coursesb.exceptionHandlingSB;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
