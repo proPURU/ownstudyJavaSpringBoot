@@ -1,4 +1,4 @@
-package com.example.coursesb.exceptionHandlingSB;
+package com.example.coursesb.SpringBoot.exceptionHandlingSB;
 
 import ch.qos.logback.classic.spi.ConfiguratorRank;
 import lombok.Getter;

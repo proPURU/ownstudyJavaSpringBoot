@@ -2,6 +2,7 @@ package com.example.coursesb.CoreJavConcepts.Threads.threadExecutor;
 
 import org.springframework.scheduling.concurrent.CustomizableThreadFactory;
 
+import java.util.Optional;
 import java.util.concurrent.*;
 
 public class Runner {
@@ -18,12 +19,47 @@ public class Runner {
                 new CustomizableThreadFactory() ,
                 new Runner().new CustomRejectHandler());
 
-        for(int i=1;i<=10;i++)
-        {
+        // EXAMPLE FOR ThreadPool Executors
 
-            threadPoolExecutor.submit(new MyTask());
-           // System.out.println("task processes by "+Thread.currentThread().getName());
-        }
+
+////        for(int i=1;i<=10;i++)
+////        {
+////
+////            threadPoolExecutor.submit(new MyTask());
+////           // System.out.println("task processes by "+Thread.currentThread().getName());
+////        }
+
+
+//
+//        //this is runnable object
+//
+//        Future<?> futureObj= threadPoolExecutor.submit(new MyTask());
+//
+//
+//        //this is how we check future object done the work or not by the get() methods
+//
+//        System.out.println("is Done "+futureObj.isDone());
+//        try{
+//            futureObj.get(2,TimeUnit.SECONDS);
+//        }
+//        catch (Exception ex)
+//        {
+//            System.out.println("Timedout exception happend ");
+//        }
+//
+//        try {
+//            futureObj.get();
+//        }
+//        catch (Exception ex)
+//        {
+//
+//        }
+//        System.out.println("is Done "+futureObj.isDone());
+//        System.out.println("is Cancelled  "+futureObj.isCancelled());
+
+
+
+
     }
 
 
